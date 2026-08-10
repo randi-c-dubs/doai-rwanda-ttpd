@@ -157,7 +157,7 @@
                         <!-- Call-to-Action Group (Vertical Stack of Pill Buttons) -->
                         <div class="flex flex-col sm:flex-row gap-4 pt-4 max-w-md">
                             <button onclick="navigateTo('schedule')" class="pill-btn w-full bg-[#4E7D51] hover:bg-[#3d6340] text-white font-bold py-4 px-8 text-center text-sm sm:text-base shadow-lg transition-all">
-                                EXPLORE WORKSHOP AGENDA
+                                WORKSHOP AGENDA
                             </button>
                             <button onclick="navigateTo('resources')" class="pill-btn w-full bg-[#E7840C] hover:bg-[#d07408] text-white font-bold py-4 px-8 text-center text-sm sm:text-base shadow-lg transition-all">
                                 VIEW RESOURCES
@@ -305,12 +305,13 @@
                 </div>
 
                 <!-- Resource Category Pills Filter -->
-                <div class="flex flex-wrap gap-2 mb-8" id="resource-category-filters
+                <div class="flex flex-wrap gap-2 mb-8" id="resource-category-filters">
                     <button onclick="filterResources('all')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#4E7D51] text-white">All Resources</button>
-                    <!--<button onclick="filterResources('Presentation Slide')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">Workshop Slides</button>
-                    <button onclick="filterResources('PDF Guide')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">Research</button>
-                    <button onclick="filterResources('Policy Doc')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">Policy & Leadership</button>-->
-                </div>
+                    <button onclick="filterResources('Slides')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">Workshop Slides</button>
+                    <!--<button onclick="filterResources('Guides')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">AI Guides</button>
+                    <button onclick="filterResources('Research')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">AI Education Research</button>
+                    <button onclick="filterResources('Policy')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">Policy & Leadership</button>-->
+                </div> 
 
                 <!-- Resource Cards Grid -->
                 <div id="resources-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -532,8 +533,8 @@
                 "timeDisplay": "08:30 AM – 09:00 AM",
                 "title": "Arrival, Registration and Networking",
                 "description": "Check-in, name badge distribution, and morning welcome networking session for participating educators and school leaders.",
-                "lead": "ASYV Team",
-                "location": "Intore Learning Centre"
+                "lead": "ASYV ",
+                "location": "Intore Learning Centre (ILC)"
             },
             {
                 "id": "evt-20260810-02",
@@ -545,7 +546,7 @@
                 "title": "Welcome and Opening Remarks",
                 "description": "Official ceremonial opening for the AI Teacher Training Program launch session.",
                 "lead": "MC",
-                "location": "Intore Learning Centre"
+                "location": "ILC"
             },
             {
                 "id": "evt-20260810-03",
@@ -554,10 +555,10 @@
                 "startTime": "10:10",
                 "endTime": "10:30",
                 "timeDisplay": "10:10 AM – 10:30 AM",
-                "title": "Health Break",
+                "title": "School Leader Health Break",
                 "description": "Networking tea break and conversations with fellow attendees.",
                 "lead": "ASYV",
-                "location": "Intore Learning Centre"
+                "location": "ILC"
             },
             {
                 "id": "evt-20260810-04",
@@ -569,7 +570,7 @@
                 "title": "AI Governance and Policy Development for School Leaders",
                 "description": "Interactive workshop exploring school AI policy with scool leaders.",
                 "lead": "Day of AI Lead Facilitator",
-                "location": "Intore Learning Center"
+                "location": "ILC"
             },
             {
                 "id": "evt-20260810-05",
@@ -581,7 +582,7 @@
                 "title": "Panel Discussion: Leading Schools in the Age of AI",
                 "description": "Featuring representatives from MINEDUC, REB, Day of AI, and school leaders.",
                 "lead": "MC",
-                "location": "Intore Learning Center"
+                "location": "ILC"
             },
             {
                 "id": "evt-20260810-06",
@@ -590,10 +591,10 @@
                 "startTime": "12:30",
                 "endTime": "1:30",
                 "timeDisplay": "12:30 PM – 1:30 PM",
-                "title": "Lunch",
+                "title": "School Leader Lunch",
                 "description": "",
                 "lead": "ASYV",
-                "location": "Intore Learning Center"
+                "location": "ILC"
             },
             {
                 "id": "evt-20260810-07",
@@ -601,11 +602,11 @@
                 "date": "2026-08-10",
                 "startTime": "13:30",
                 "endTime": "14:30",
-                "timeDisplay": "13:30 PM – 14:30 PM",
+                "timeDisplay": "1:30 PM – 2:30 PM",
                 "title": "Demystifying AI for School Leaders",
                 "description": "A hands-on workshop covering the basics of generative AI and key use cases for school leaders.",
                 "lead": "Day of AI Lead Facilitator",
-                "location": "Intore Learning Center"
+                "location": "ILC"
             },
             {
                 "id": "evt-20260810-08",
@@ -613,102 +614,461 @@
                 "date": "2026-08-10",
                 "startTime": "14:30",
                 "endTime": "15:00",
-                "timeDisplay": "14:30 PM – 15:00 PM",
+                "timeDisplay": "2:30 PM – 3:00 PM",
                 "title": "School Leader Session Closing",
                 "description": "Overview of the Teacher Traing Program, Closing Remarks, Group Photo, and Departure",
                 "lead": "ASYV & Day of AI",
-                "location": "Intore Learning Center"
+                "location": "ILC"
             },
+            {
+                "id": "evt-20260810-09",
+                "day": "Day 1 - 10 August, 2026",
+                "date": "2026-08-10",
+                "startTime": "14:00",
+                "endTime": "15:30",
+                "timeDisplay": "02:00 PM – 03:30 PM",
+                "title": "Teacher Registration and Room Assignment",
+                "description": "Sign-in and welcome kit distribution.",
+                "lead": "ASYV",
+                "location": "ASYV"
+              },
+              {
+                "id": "evt-20260810-10",
+                "day": "Day 1 - 10 August, 2026",
+                "date": "2026-08-10",
+                "startTime": "15:30",
+                "endTime": "16:00",
+                "timeDisplay": "03:30 PM – 04:00 PM",
+                "title": "Teacher Health Break",
+                "description": "Snacks, Juice, Tea, and Coffee.",
+                "lead": "ASYV ",
+                "location": "Intore Learning Center (ILC)"
+              },
+              {
+                "id": "evt-20260810-11",
+                "day": "Day 1 - 10 August, 2026",
+                "date": "2026-08-10",
+                "startTime": "16:00",
+                "endTime": "16:20",
+                "timeDisplay": "04:00 PM – 04:10 PM",
+                "title": "Teacher Welcome and Orientation",
+                "description": "ASYV Program Director welcome address. Overview of the AI Training Programme: Objectives, Structure, Timeline and Expected Outcomes.",
+                "lead": "ASYV & Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260810-13",
+                "day": "Day 1 - 10 August, 2026",
+                "date": "2026-08-10",
+                "startTime": "16:20",
+                "endTime": "17:20",
+                "timeDisplay": "04:20 PM – 05:20 PM",
+                "title": "Networking",
+                "description": "Team-building activity.",
+                "lead": "ASYV",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260810-07",
+                "day": "Day 1 - 10 August, 2026",
+                "date": "2026-08-10",
+                "startTime": "17:20",
+                "endTime": "18:00",
+                "timeDisplay": "05:20 PM – 06:00 PM",
+                "title": "Module 1: Pre-Assessment",
+                "description": "Initial assessment session for participating educators.",
+                "lead": "Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260810-14",
+                "day": "Day 1 - 10 August, 2026",
+                "date": "2026-08-10",
+                "startTime": "18:00",
+                "endTime": "19:00",
+                "timeDisplay": "06:00 PM – 07:00 PM",
+                "title": "Module 2: Demystifying AI",
+                "description": "Core workshop session introducing foundational AI concepts.",
+                "lead": "Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260810-15",
+                "day": "Day 1 - 10 August, 2026",
+                "date": "2026-08-10",
+                "startTime": "19:00",
+                "endTime": "20:00",
+                "timeDisplay": "07:00 PM – 08:00 PM",
+                "title": "Dinner",
+                "description": "Evening dinner.",
+                "lead": "ASYV",
+                "location": "ILC"
+              },
 
             // DAY 2 - AUG 11, 2026
-            /*{
+              {
                 "id": "evt-20260811-01",
-                "day": "Day 2 - August 11, 2026",
+                "day": "Day 2 - 11 August, 2026",
                 "date": "2026-08-11",
-                "startTime": "12:30",
-                "endTime": "01:00",
-                "timeDisplay": "12:30 PM – 01:30 PM CAT",
-                "title": "Day 2 Warm-up & Reflection",
-                "description": "Reviewing Key takeaways from Day 1 and setting target goals for practical curriculum generation.",
-                "lead": "ASYV Pedagogy Lead",
-                "location": "Intore Learning Centre"
-            },
-            {
+                "startTime": "07:00",
+                "endTime": "08:00",
+                "timeDisplay": "07:00 AM – 08:00 AM",
+                "title": "Breakfast",
+                "description": "Morning breakfast session.",
+                "lead": "ASYV",
+                "location": "Intore Learning Center (ILC)"
+              },
+              {
                 "id": "evt-20260811-02",
-                "day": "Day 2 - August 11, 2026",
+                "day": "Day 2 - 11 August, 2026",
                 "date": "2026-08-11",
-                "startTime": "09:00",
-                "endTime": "12:00",
-                "timeDisplay": "09:00 AM – 12:00 PM CAT",
-                "title": "Module 2: Generating Differentiated Assessments & Quizzes",
-                "description": "Practical workshop on using Large Language Models to craft differentiated assessment rubrics, multiple-choice questions, and homework exercises.",
-                "lead": "Education Specialist",
-                "location": "Computer Lab A"
-            },
-            {
+                "startTime": "08:00",
+                "endTime": "10:00",
+                "timeDisplay": "08:00 AM – 10:00 AM",
+                "title": "Module 1: Intro to AI",
+                "description": "AI Training 1: Intro to AI.",
+                "lead": "Day of AI Lead Facilitator & Co-Facilitators",
+                "location": "Liquidnet Family High School (LFHS) & Intore Learning Center (ILC)"
+              },
+              {
                 "id": "evt-20260811-03",
-                "day": "Day 2 - August 11, 2026",
+                "day": "Day 2 - 11 August, 2026",
+                "date": "2026-08-11",
+                "startTime": "10:15",
+                "endTime": "12:15",
+                "timeDisplay": "10:15 AM – 12:15 PM",
+                "title": "Module 2: AI Ethics and Societal Impact",
+                "description": "AI Training 2: AI Ethics and Societal Impact.",
+                "lead": "Day of AI Lead Facilitator & Co-Facilitators",
+                "location": "LFHS & ILC"
+              },
+              {
+                "id": "evt-20260811-04",
+                "day": "Day 2 - 11 August, 2026",
+                "date": "2026-08-11",
+                "startTime": "12:15",
+                "endTime": "13:00",
+                "timeDisplay": "12:15 PM – 01:00 PM",
+                "title": "Review",
+                "description": "Review session of the morning modules.",
+                "lead": "Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260811-05",
+                "day": "Day 2 - 11 August, 2026",
+                "date": "2026-08-11",
+                "startTime": "13:00",
+                "endTime": "14:00",
+                "timeDisplay": "01:00 PM – 02:00 PM",
+                "title": "Lunch Break",
+                "description": "Afternoon lunch break for participants.",
+                "lead": "ASYV Team",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260811-06",
+                "day": "Day 2 - 11 August, 2026",
                 "date": "2026-08-11",
                 "startTime": "14:00",
+                "endTime": "16:00",
+                "timeDisplay": "02:00 PM – 04:00 PM",
+                "title": "Module 3: Intro to Machine Learning and Data",
+                "description": "AI Training 3: Intro to Machine Learning and Data.",
+                "lead": "Day of AI Lead Facilitator & Co-Facilitators",
+                "location": "LFHS & ILC"
+              },
+              {
+                "id": "evt-20260811-07",
+                "day": "Day 2 - 11 August, 2026",
+                "date": "2026-08-11",
+                "startTime": "16:00",
                 "endTime": "16:30",
-                "timeDisplay": "02:00 PM – 04:30 PM CAT",
-                "title": "Module 3: Localizing Content & Kinyarwanda Educational Prompts",
-                "description": "Adapting AI tools for multilingual contexts and leveraging AI in localizing STEM concepts into Kinyarwanda context.",
-                "lead": "Language & Tech Specialist",
-                "location": "Intore Learning Centre"
-            },
+                "timeDisplay": "04:00 PM – 04:30 PM",
+                "title": "Health Break",
+                "description": "Afternoon tea and snack break.",
+                "lead": "Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260811-08",
+                "day": "Day 2 - 11 August, 2026",
+                "date": "2026-08-11",
+                "startTime": "16:30",
+                "endTime": "18:30",
+                "timeDisplay": "04:30 PM – 06:30 PM",
+                "title": "Module 4: Teacher AI Tools",
+                "description": "AI Training 4: Teacher AI Tools.",
+                "lead": "Day of AI Lead Facilitator & Co-Facilitators",
+                "location": "LFHS & ILC"
+              },
+              {
+                "id": "evt-20260811-09",
+                "day": "Day 2 - 11 August, 2026",
+                "date": "2026-08-11",
+                "startTime": "18:30",
+                "endTime": "19:00",
+                "timeDisplay": "06:30 PM – 07:00 PM",
+                "title": "Assignment Brief",
+                "description": "Briefing session on practical exercises and assignments.",
+                "lead": "Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260811-10",
+                "day": "Day 2 - 11 August, 2026",
+                "date": "2026-08-11",
+                "startTime": "19:00",
+                "endTime": "20:00",
+                "timeDisplay": "07:00 PM – 08:00 PM",
+                "title": "Dinner",
+                "description": "Evening dinner.",
+                "lead": "ASYV",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260811-11",
+                "day": "Day 2 - 11 August, 2026",
+                "date": "2026-08-11",
+                "startTime": "20:00",
+                "endTime": "21:30",
+                "timeDisplay": "08:00 PM – 09:30 PM",
+                "title": "After Dinner Activity",
+                "description": "African Games / Trivia games.",
+                "lead": "ASYV",
+                "location": "ILC"
+              },
 
             // DAY 3 - AUG 12, 2026
-            {
+              {
                 "id": "evt-20260812-01",
-                "day": "Day 3 - August 12, 2026",
+                "day": "Day 3 - 12 August, 2026",
                 "date": "2026-08-12",
-                "startTime": "09:00",
-                "endTime": "11:30",
-                "timeDisplay": "09:00 AM – 11:30 AM CAT",
-                "title": "Ethics, Plagiarism & Student AI Governance",
-                "description": "Panel discussion and working group on establishing school guidelines for student AI usage, academic honesty, and data privacy in Rwanda.",
-                "lead": "Ethics Panel & School Leaders",
-                "location": "Main Auditorium"
-            },
-            {
+                "startTime": "07:00",
+                "endTime": "08:00",
+                "timeDisplay": "07:00 AM – 08:00 AM",
+                "title": "Breakfast",
+                "description": "Morning breakfast session.",
+                "lead": "ASYV",
+                "location": "Intore Learning Center (ILC)"
+              },
+              {
                 "id": "evt-20260812-02",
-                "day": "Day 3 - August 12, 2026",
+                "day": "Day 3 - 12 August, 2026",
                 "date": "2026-08-12",
-                "startTime": "13:30",
+                "startTime": "08:00",
+                "endTime": "08:45",
+                "timeDisplay": "08:00 AM – 08:45 AM",
+                "title": "Review",
+                "description": "Morning review session of previous material.",
+                "lead": "Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260812-03",
+                "day": "Day 3 - 12 August, 2026",
+                "date": "2026-08-12",
+                "startTime": "08:45",
+                "endTime": "10:45",
+                "timeDisplay": "08:45 AM – 10:45 AM",
+                "title": "Module 1: Student AI Curriculum",
+                "description": "Overview and training on Student AI Curriculum. Session begins as one group.",
+                "lead": "Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260812-04",
+                "day": "Day 3 - 12 August, 2026",
+                "date": "2026-08-12",
+                "startTime": "11:00",
+                "endTime": "13:00",
+                "timeDisplay": "11:00 AM – 01:00 PM",
+                "title": "Module 2: Building \"Low-code\" AI tools for teachers",
+                "description": "Hands-on session on building \"Low-code\" AI tools for teachers.",
+                "lead": "Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260812-05",
+                "day": "Day 3 - 12 August, 2026",
+                "date": "2026-08-12",
+                "startTime": "13:00",
+                "endTime": "14:00",
+                "timeDisplay": "01:00 PM – 02:00 PM",
+                "title": "Lunch Break",
+                "description": "Afternoon lunch break for participants.",
+                "lead": "ASYV",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260812-06",
+                "day": "Day 3 - 12 August, 2026",
+                "date": "2026-08-12",
+                "startTime": "14:00",
                 "endTime": "16:00",
-                "timeDisplay": "01:30 PM – 04:00 PM CAT",
-                "title": "Group Project: Co-creating National AI Teaching Unit",
-                "description": "Teachers collaborate in subject groups (Math, Science, Humanities, Languages) to produce a complete 4-week AI-supported curriculum module.",
-                "lead": "All Facilitators",
-                "location": "Breakout Rooms"
-            },
-
+                "timeDisplay": "02:00 PM – 04:00 PM",
+                "title": "Module 3: Final Project Work Time + Office Hours",
+                "description": "Final project work time and office hours with facilitators. Breakout into smaller groups.",
+                "lead": "Day of AI Lead Facilitator & Co-Facilitators",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260812-07",
+                "day": "Day 3 - 12 August, 2026",
+                "date": "2026-08-12",
+                "startTime": "16:00",
+                "endTime": "16:30",
+                "timeDisplay": "04:00 PM – 04:30 PM",
+                "title": "Health Break",
+                "description": "Afternoon refreshments and networking break.",
+                "lead": "ASYV",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260812-08",
+                "day": "Day 3 - 12 August, 2026",
+                "date": "2026-08-12",
+                "startTime": "16:30",
+                "endTime": "18:30",
+                "timeDisplay": "04:30 PM – 06:30 PM",
+                "title": "Module 4: Final Project Work Time + Office Hours",
+                "description": "Continued final project work time and office hours. Breakout into smaller groups.",
+                "lead": "Day of AI Lead Facilitator & Co-Facilitators",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260812-09",
+                "day": "Day 3 - 12 August, 2026",
+                "date": "2026-08-12",
+                "startTime": "18:30",
+                "endTime": "19:00",
+                "timeDisplay": "06:30 PM – 07:00 PM",
+                "title": "Programme Evaluation & Participant Feedback",
+                "description": "Post-Assessment and AI Action Plan completion.",
+                "lead": "Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260812-10",
+                "day": "Day 3 - 12 August, 2026",
+                "date": "2026-08-12",
+                "startTime": "19:00",
+                "endTime": "20:00",
+                "timeDisplay": "07:00 PM – 08:00 PM",
+                "title": "Dinner",
+                "description": "Evening dinner.",
+                "lead": "ASYV",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260812-11",
+                "day": "Day 3 - 12 August, 2026",
+                "date": "2026-08-12",
+                "startTime": "20:00",
+                "endTime": "21:30",
+                "timeDisplay": "08:00 PM – 09:30 PM",
+                "title": "After Dinner Activity",
+                "description": "Closing night activity.",
+                "lead": "ASYV",
+                "location": "ILC"
+              },
             // DAY 4 - AUG 13, 2026
-            {
+              {
                 "id": "evt-20260813-01",
-                "day": "Day 4 - August 13, 2026",
+                "day": "Day 4 - 13 August, 2026",
+                "date": "2026-08-13",
+                "startTime": "07:00",
+                "endTime": "08:00",
+                "timeDisplay": "07:00 AM – 08:00 AM",
+                "title": "Breakfast",
+                "description": "Morning breakfast session.",
+                "lead": "ASYV",
+                "location": "Intore Learning Center (ILC)"
+              },
+              {
+                "id": "evt-20260813-02",
+                "day": "Day 4 - 13 August, 2026",
+                "date": "2026-08-13",
+                "startTime": "08:00",
+                "endTime": "09:00",
+                "timeDisplay": "08:00 AM – 09:00 AM",
+                "title": "Opening Reflection",
+                "description": "Recap of the training journey and objectives for the day + AI Action Plan?",
+                "lead": "Day of AI Lead Facilitator & ASYV",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260813-03",
+                "day": "Day 4 - 13 August, 2026",
                 "date": "2026-08-13",
                 "startTime": "09:00",
-                "endTime": "11:30",
-                "timeDisplay": "09:00 AM – 11:30 AM CAT",
-                "title": "Capstone Showcase & Teaching Demonstrations",
-                "description": "Participant presentations showcasing classroom-ready AI lesson plans developed during the 4-day intensive training.",
-                "lead": "Teacher Cohort Leads",
-                "location": "Main Auditorium"
-            },
-            {
-                "id": "evt-20260813-02",
-                "day": "Day 4 - August 13, 2026",
+                "endTime": "11:00",
+                "timeDisplay": "09:00 AM – 11:00 AM",
+                "title": "AI in Action: Teacher Showcase",
+                "description": "Participants' presentations + school AI implementation commitments and first steps for the next school term.",
+                "lead": "All",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260813-04",
+                "day": "Day 4 - 13 August, 2026",
                 "date": "2026-08-13",
-                "startTime": "11:30",
+                "startTime": "11:00",
+                "endTime": "11:10",
+                "timeDisplay": "11:00 AM – 11:10 AM",
+                "title": "Reflections and Appreciation Remarks",
+                "description": "Selected participant representatives.",
+                "lead": "ASYV & Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260813-05",
+                "day": "Day 4 - 13 August, 2026",
+                "date": "2026-08-13",
+                "startTime": "11:10",
+                "endTime": "11:40",
+                "timeDisplay": "11:10 AM – 11:40 AM",
+                "title": "Certificate Award Ceremony",
+                "description": "Presentation of certificates and recognition of participants. Pictures with all the schools receiving their certificates.",
+                "lead": "ASYV & Day of AI Lead Facilitator",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260813-06",
+                "day": "Day 4 - 13 August, 2026",
+                "date": "2026-08-13",
+                "startTime": "11:40",
+                "endTime": "11:50",
+                "timeDisplay": "11:40 AM – 11:50 AM",
+                "title": "Closing Remarks",
+                "description": "Official Closing of the training.",
+                "lead": "CEO, ASYV",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260813-07",
+                "day": "Day 4 - 13 August, 2026",
+                "date": "2026-08-13",
+                "startTime": "11:50",
+                "endTime": "12:00",
+                "timeDisplay": "11:50 AM – 12:00 PM",
+                "title": "Group Photo",
+                "description": "Group photo session.",
+                "lead": "ASYV",
+                "location": "ILC"
+              },
+              {
+                "id": "evt-20260813-08",
+                "day": "Day 4 - 13 August, 2026",
+                "date": "2026-08-13",
+                "startTime": "12:00",
                 "endTime": "13:00",
-                "timeDisplay": "11:30 AM – 01:00 PM CAT",
-                "title": "Closing Ceremony & Certificate Awarding",
-                "description": "Official closing remarks by ASYV leadership and Day of AI partners, followed by presentation of training completion certificates.",
-                "lead": "ASYV & Day of AI Dignitaries",
-                "location": "Intore Learning Centre"
-            }*/
+                "timeDisplay": "12:00 PM – 01:00 PM",
+                "title": "Lunch",
+                "description": "Departure after lunch.",
+                "lead": "ASYV",
+                "location": "ILC"
+              }
         ];
 
         const RESOURCES_DATA = [
@@ -720,7 +1080,47 @@
                 "description": "Welcome to the AI Teacher Training Program, hosted by ASYV and Day of AI",
                 "url": "https://drive.google.com/file/d/1VxqaRJA9r-BFSywtt8vmvcfh-8HpYxVa/view?usp=sharing",
                 "thumbnail": "./thumbnails/res-01.png"
+            },
+            {
+                "id": "res-05",
+                "title": "School AI Policy",
+                "category": "Slides",
+                "day": "Day 1",
+                "description": "An interactive workshop for school leaders building or iterating on school AI policy.",
+                "url": "https://docs.google.com/presentation/d/1f043io5wsDsH1630rXrGnwm3pK6uyDx-8JfYbF97GDU/edit?usp=drive_link",
+                "thumbnail": "./thumbnails/res-05.png"
+            },
+            {
+                "id": "res-03",
+                "title": "Demystifying AI for School Leaders",
+                "category": "Slides",
+                "day": "Day 1",
+                "description": "An introduction to foundational AI literacy and AI tools for school leaders.",
+                "url": "https://docs.google.com/presentation/d/1WC0739rwgTzm_8zCDw3uOcd1PJKlCiF9wb61xzNoXf8/edit?usp=drive_link",
+                "thumbnail": "./thumbnails/res-03.png"
+            },
+            {
+                "id": "res-04",
+                "title": "Demystifying AI for Teachers",
+                "category": "Slides",
+                "day": "Day 1",
+                "description": "An introduction to foundational AI literacy and AI tools for teachers.",
+                "url": "https://docs.google.com/presentation/d/1E_TxofCfWQrRY1xMltEpj6ZjFkGhxCjk3-sB55yh1hg/edit?usp=drive_link",
+                "thumbnail": "./thumbnails/res-04.png"
+            },
+            {
+                "id": "res-02",
+                "title": "Secondary Teacher AI Use Cards",
+                "category": "Guides",
+                "day": "Day 1",
+                "description": "A list of example uses of AI for educators, with tools and prompts.",
+                "url": "https://drive.google.com/file/d/1QVMBUYspLRv3oPNQXQHnFJIFAfjodxDG/view?usp=sharing",
+                "thumbnail": "./thumbnails/res-02.png"
             }
+            // NPR: https://www.npr.org/2026/07/30/nx-s1-5853571/students-set-ai-policy
+            // Bellwether: http://bellwether.org/publications/productive-struggle/
+            // MIT Policy: https://raise.mit.edu/wp-content/uploads/2025/08/AI-K-12_final-V3.pdf
+            // MIT guide: https://tsl.mit.edu/wp-content/uploads/2025/08/GuideToAIInSchools.pdf
         ];
 
 
