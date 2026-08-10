@@ -41,6 +41,14 @@
             color: #333333;
             font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
             -webkit-font-smoothing: antialiased;
+            
+            /* Initial state for smooth fade-in */
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        body.loaded {
+            opacity: 1;
         }
         
         .arch-frame {
@@ -141,7 +149,7 @@
                     <div class="lg:col-span-7 space-y-6">
                         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4873C1]/10 text-[#4873C1] font-bold text-xs tracking-wide">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 022 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
                             </svg>
                             10 - 13 AUGUST, 2026 • RWAMAGANA, RWANDA
                         </div>
@@ -308,9 +316,6 @@
                 <div class="flex flex-wrap gap-2 mb-8" id="resource-category-filters">
                     <button onclick="filterResources('all')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#4E7D51] text-white">All Resources</button>
                     <button onclick="filterResources('Slides')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">Workshop Slides</button>
-                    <!--<button onclick="filterResources('Guides')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">AI Guides</button>
-                    <button onclick="filterResources('Research')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">AI Education Research</button>
-                    <button onclick="filterResources('Policy')" class="res-filter-btn pill-btn px-4 py-1.5 text-xs font-bold bg-[#725D40]/10 text-[#333333]/80 hover:bg-[#725D40]/20">Policy & Leadership</button>-->
                 </div> 
 
                 <!-- Resource Cards Grid -->
@@ -518,6 +523,17 @@
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
+        // Smooth page fade-in controller
+        function revealPage() {
+            document.body.classList.add('loaded');
+        }
+
+        // Trigger fade-in as soon as all assets (images/fonts) finish loading
+        window.addEventListener('load', revealPage);
+
+        // Fallback: Ensure page displays after 1.5 seconds even if an image load hangs/fails
+        setTimeout(revealPage, 1500);
+
         // ==========================================
         // 1. DATASETS (Schedule & Resources)
         // ==========================================
@@ -1117,10 +1133,6 @@
                 "url": "https://drive.google.com/file/d/1QVMBUYspLRv3oPNQXQHnFJIFAfjodxDG/view?usp=sharing",
                 "thumbnail": "./thumbnails/res-02.png"
             }
-            // NPR: https://www.npr.org/2026/07/30/nx-s1-5853571/students-set-ai-policy
-            // Bellwether: http://bellwether.org/publications/productive-struggle/
-            // MIT Policy: https://raise.mit.edu/wp-content/uploads/2025/08/AI-K-12_final-V3.pdf
-            // MIT guide: https://tsl.mit.edu/wp-content/uploads/2025/08/GuideToAIInSchools.pdf
         ];
 
 
