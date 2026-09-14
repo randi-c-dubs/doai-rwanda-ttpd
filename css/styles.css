@@ -1,0 +1,42 @@
+body {
+    background-color: #FAF8F5;
+    color: #333333;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.arch-frame {
+    border-radius: 180px 180px 24px 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px -15px rgba(78, 125, 81, 0.18);
+}
+
+.tab-active {
+    background-color: #4E7D51 !important;
+    color: #FFFFFF !important;
+}
+
+.pill-btn {
+    border-radius: 9999px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pill-btn:hover {
+    transform: translateY(-2px);
+}
+
+.earth-card {
+    background-color: rgba(114, 93, 64, 0.06);
+    border: 1px solid rgba(114, 93, 64, 0.14);
+}
+
+.earth-card-hover:hover {
+    background-color: rgba(114, 93, 64, 0.1);
+    border-color: rgba(78, 125, 81, 0.35);
+}
