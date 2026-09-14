@@ -728,6 +728,34 @@ function closeDonateModal() {
     if (modal) modal.classList.add('hidden');
 }
 
+// HERO SLIDESHOW ROTATOR
+function initHeroSlideshow() {
+    const slides = document.querySelectorAll('#hero-slideshow .hero-slide');
+    if (slides.length <= 1) return;
+
+    let currentSlide = 0;
+
+    setInterval(() => {
+        // Hide active slide
+        slides[currentSlide].classList.remove('opacity-100');
+        slides[currentSlide].classList.add('opacity-0');
+
+        // Advance index
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        // Show next slide
+        slides[currentSlide].classList.remove('opacity-0');
+        slides[currentSlide].classList.add('opacity-100');
+    }, 4000); // Rotates every 4 seconds
+}
+
+// Append initHeroSlideshow() to DOMContentLoaded block
+document.addEventListener('DOMContentLoaded', () => {
+    initHeroSlideshow();
+    renderSchedule();
+    renderResources();
+});
+
 // Schedule Logic
 let currentScheduleFilter = 'all';
 
